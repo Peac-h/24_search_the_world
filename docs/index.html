@@ -1,1 +1,78 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="description" content="This World, coded by the Peach."><meta name="keywords" content="HTML, CSS, Sass, Javascript, Coding"><meta name="author" content="the Peach"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Reenie+Beanie&display=swap" rel="stylesheet"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.275cf351.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.fed1d505.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.062f4c00.png"><link rel="stylesheet" href="/index.c9fd28ec.css"><script type="module" src="/index.e7685fc2.js"></script><script src="/index.492940f9.js" nomodule defer></script><title>This World</title></head><body> <div class="container"> <header> <h1 class="main-heading"> Search The World <span>"the journey, not the arrival matters"</span> </h1> <p class="quote-author">T. S. Eliot</p> </header> <section class="search"> <select class="search__options" id="select"> <option value selected>Choose search key</option> <option value="byName">Country name</option> <option value="byCapital">Capital</option> <option value="byLanguage">Language</option> <option value="byRegion">Region</option> <option value="bySubRegion">Subregion</option> </select> <input class="search__input" type="text" id="inputEl" placeholder="Where to go?" autocomplete="off"> <button class="search__button" id="btnSearch">Search</button> </section> <section class="main"> <div class="data-info" id="dataInfo"> <div class="placeholder"> Choose your options and start searching... </div>    </div> <div class="countries">  </div> <div class="pagination" id="paginationContainer">  </div> </section> <footer class="author"> Code by the <a href="https://github.com/Peac-h">Peach</a> </footer> </div> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="This World, coded by the Peach." />
+    <meta name="keywords" content="HTML, CSS, Sass, Javascript, Coding" />
+    <meta name="author" content="the Peach" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.275cf351.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.fed1d505.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.062f4c00.png"
+    />
+    <link rel="stylesheet" href="./index.c9fd28ec.css" />
+    <script type="module" src="./index.e7685fc2.js"></script>
+    <script src="./index.492940f9.js" nomodule defer></script>
+    <title>This World</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="main-heading">
+          Search The World <span>"the journey, not the arrival matters"</span>
+        </h1>
+        <p class="quote-author">T. S. Eliot</p>
+      </header>
+      <section class="search">
+        <select class="search__options" id="select">
+          <option value selected>Choose search key</option>
+          <option value="byName">Country name</option>
+          <option value="byCapital">Capital</option>
+          <option value="byLanguage">Language</option>
+          <option value="byRegion">Region</option>
+          <option value="bySubRegion">Subregion</option>
+        </select>
+        <input
+          class="search__input"
+          type="text"
+          id="inputEl"
+          placeholder="Where to go?"
+          autocomplete="off"
+        />
+        <button class="search__button" id="btnSearch">Search</button>
+      </section>
+      <section class="main">
+        <div class="data-info" id="dataInfo">
+          <div class="placeholder">
+            Choose your options and start searching...
+          </div>
+        </div>
+        <div class="countries"></div>
+        <div class="pagination" id="paginationContainer"></div>
+      </section>
+      <footer class="author">
+        Code by the <a href="https://github.com/Peac-h">Peach</a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+// loader
+
+.loader {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #fff;
+  border-right: 3px solid transparent;
+  justify-self: center;
+  margin-top: 5rem;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// results
+
+.result span {
+  padding: 1rem 2rem;
+  background: var(--color-body);
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+// pagination
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+
+  button {
+    padding: 0 1rem;
+    border-radius: 2rem;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--color-input);
+
+    svg {
+      scale: 0.8;
+      fill: var(--color-input);
+
+      &:first-child {
+        rotate: 180deg;
+      }
+    }
+  }
+}
+
+// errors
+
+.error {
+  background: var(--color-error);
+  color: var(--color-text);
+
+  &:focus {
+    outline: 5px solid var(--color-error-outline);
+  }
+}
+
+.error-msg {
+  text-align: center;
+}
+
+// author
+
+.author {
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  justify-self: end;
+  font-size: 2rem;
+  padding: 4rem 0;
+
+  a:link,
+  a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Search The World, coded by the Peach." />
+    <meta name="keywords" content="HTML, CSS, Sass, Javascript, Coding" />
+    <meta name="author" content="the Peach" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/fav/favicon-16x16.png"
+    />
+    <!-- <link rel="manifest" href="./src/fav/site.webmanifest" /> -->
+
+    <link rel="stylesheet" href="./src/sass/main.scss" />
+    <script type="module" src="./src/js/script.js"></script>
+
+    <title>Search The World</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="main-heading">
+          Search The World <span>"the journey, not the arrival matters"</span>
+        </h1>
+        <p class="quote-author">T. S. Eliot</p>
+      </header>
+
+      <section class="search">
+        <select class="search__options" id="select">
+          <option value selected>Choose search key</option>
+          <option value="byName">Country name</option>
+          <option value="byCapital">Capital</option>
+          <option value="byLanguage">Language</option>
+          <option value="byRegion">Region</option>
+          <option value="bySubRegion">Subregion</option>
+        </select>
+
+        <input
+          class="search__input"
+          type="text"
+          id="inputEl"
+          placeholder="Where to go?"
+          autocomplete="off"
+        />
+
+        <button class="search__button" id="btnSearch">Search</button>
+      </section>
+
+      <section class="main">
+        <div class="data-info" id="dataInfo">
+          <div class="placeholder">
+            Choose your options and start searching...
+          </div>
+
+          <!-- <div class="loader"></div> -->
+
+          <!-- <p class="error-msg">
+            Nothing was found (404). Please, ensure to double check entered
+          values!
+          </p> -->
+
+          <!-- <div class="result">
+            We've got <span>${number}</span> result(s):
+          </div> -->
+        </div>
+
+        <div class="countries">
+          <!-- <article class="country">
+            <div class="country__data">
+              <div>
+                <h2 class="c-name">data <span> data </span></h2>
+              </div>
+
+              <div>
+                <h3><span>Official Name: </span>data</h3>
+                <p><span>Native Name: </span>data</p>
+                <p><span>Also Spelled As: </span>data</p>
+                <p><span>Capital: </span>data</p>
+                <p><span>Language: </span>data</p>
+                <p><span>Population: </span>data</p>
+                <p><span>Area: </span>data</p>
+                <p><span>Currency: </span>data</p>
+                <p><span>Continent: </span>data</p>
+                <p><span>Region: </span>data</p>
+                <p><span>Subregion: </span>data</p>
+                <p><span>Time Zone: </span>data</p>
+              </div>
+            </div>
+
+            <div class="country__images">
+              <div class="coa">
+                <img src="data" alt="flag of the country" />
+              </div>
+              <div class="flag">
+                <img src="data" alt="flag of the country" />
+              </div>
+            </div>
+          </article> -->
+        </div>
+
+        <div class="pagination" id="paginationContainer">
+          <!-- <button data-goto="${currPage - 1}" class="btn--pagination btn--prev">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40"><path d="M250.77 643.025h50.255q5.769-61.308 52.513-103.09 46.744-41.782 110.975-41.782 41.282 0 86.013 24.898 44.732 24.898 73.783 69.719h-89.488v50.255h173.64v-173.64h-50.255v88.258q-36.616-55.078-90.014-82.411-53.397-27.334-103.679-27.334-86.179 0-146.692 56.679-60.512 56.679-67.051 138.448Zm229.297 312.974q-78.426 0-147.666-29.92t-120.887-81.544q-51.647-51.624-81.58-120.833-29.933-69.21-29.933-147.635 0-78.836 29.92-148.204 29.92-69.369 81.544-120.682 51.624-51.314 120.833-81.247 69.21-29.933 147.635-29.933 78.836 0 148.204 29.92 69.369 29.92 120.682 81.21 51.314 51.291 81.247 120.629 29.933 69.337 29.933 148.173 0 78.426-29.92 147.666t-81.21 120.887q-51.291 51.647-120.629 81.58-69.337 29.933-148.173 29.933ZM480 905.744q137.795 0 233.769-96.18Q809.744 713.385 809.744 576q0-137.795-95.975-233.769Q617.795 246.256 480 246.256q-137.385 0-233.564 95.975-96.18 95.974-96.18 233.769 0 137.385 96.18 233.564 96.179 96.18 233.564 96.18ZM480 576Z"/></svg>
+            <span>Page ${currPage - 1}</span>
+          </button>
+
+          <button data-goto="${currPage + 1}" class="btn--pagination btn--next">
+            <span>Page ${currPage + 1}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40"><path d="M250.77 643.025h50.255q5.769-61.308 52.513-103.09 46.744-41.782 110.975-41.782 41.282 0 86.013 24.898 44.732 24.898 73.783 69.719h-89.488v50.255h173.64v-173.64h-50.255v88.258q-36.616-55.078-90.014-82.411-53.397-27.334-103.679-27.334-86.179 0-146.692 56.679-60.512 56.679-67.051 138.448Zm229.297 312.974q-78.426 0-147.666-29.92t-120.887-81.544q-51.647-51.624-81.58-120.833-29.933-69.21-29.933-147.635 0-78.836 29.92-148.204 29.92-69.369 81.544-120.682 51.624-51.314 120.833-81.247 69.21-29.933 147.635-29.933 78.836 0 148.204 29.92 69.369 29.92 120.682 81.21 51.314 51.291 81.247 120.629 29.933 69.337 29.933 148.173 0 78.426-29.92 147.666t-81.21 120.887q-51.291 51.647-120.629 81.58-69.337 29.933-148.173 29.933ZM480 905.744q137.795 0 233.769-96.18Q809.744 713.385 809.744 576q0-137.795-95.975-233.769Q617.795 246.256 480 246.256q-137.385 0-233.564 95.975-96.18 95.974-96.18 233.769 0 137.385 96.18 233.564 96.179 96.18 233.564 96.18ZM480 576Z"/></svg>
+          </button> -->
+        </div>
+      </section>
+
+      <footer class="author">
+        Code by the <a href="https://github.com/Peac-h">Peach</a>
+      </footer>
+    </div>
+  </body>
+</html>

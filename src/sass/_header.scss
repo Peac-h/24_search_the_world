@@ -1,0 +1,25 @@
+header {
+  font-family: var(--font-secondary);
+
+  .main-heading {
+    font-size: 5rem;
+    letter-spacing: 10px;
+    line-height: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+    span {
+      display: block;
+      font-size: 4rem;
+      letter-spacing: 0;
+      text-transform: lowercase;
+    }
+  }
+
+  .quote-author {
+    text-align: end;
+    font-size: 3rem;
+    margin-right: 20%;
+  }
+}

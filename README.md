@@ -1,6 +1,6 @@
 # Search The World
 
-This is a country search application that fetches and displays country data based on user input. The app is built with JavaScript and [RestCountries API](https://restcountries.com/). It allows users to search for countries by various search options and display various information about the country (e.g. official and native names, flags, currencies, population, area, etc.).
+This is a country search application that fetches and displays country data based on user input. The app is built with JavaScript and [Rest Countries API](https://restcountries.com/). It allows users to search for countries by various search options and display various information about the country (e.g. official and native names, flags, currencies, population, area, etc.).
 
 The application is designed with a responsive user interface.
 
@@ -38,7 +38,7 @@ The application is designed with a responsive user interface.
 
 This project uses the
 
-- [RestCountries API](https://restcountries.com/)
+- [Rest Countries API](https://restcountries.com/)
 
 ## Author
 
